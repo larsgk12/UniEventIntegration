@@ -3,6 +3,8 @@ using UniEventIntegration.UnimicroPlatformAuth;
 using UniEventIntegration.UnimicroPlatformAuth.Models;
 using UniEventIntegration.Utils.Extensions;
 
+namespace UniEventIntegration.UnimicroPlatform;
+
 public sealed class ApiClient(HttpClient httpClient, IAuthManager authManager)
 {
     public async ValueTask<HttpClient?> GetHttpClientAsync(

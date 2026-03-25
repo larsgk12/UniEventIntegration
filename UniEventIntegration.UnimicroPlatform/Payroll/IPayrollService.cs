@@ -1,7 +1,6 @@
-﻿namespace UniEventIntegration.UnimicroPlatform.Payroll
+﻿namespace UniEventIntegration.UnimicroPlatform.Payroll;
+
+public interface IPayrollService
 {
-    public interface IPayrollService
-    {
-        Task SendDialogportenUpdate(string source, CancellationToken cancellationToken = default);
-    }
+    Task SendDialogportenUpdate(string source, CancellationToken cancellationToken = default);
 }
