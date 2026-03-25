@@ -7,5 +7,8 @@ namespace UniEventIntegration.Controllers
     [ApiController]
     public class AltinnSubscriptionController : ControllerBase
     {
+
+
+
     }
 }

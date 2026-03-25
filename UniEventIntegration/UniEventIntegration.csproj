@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\UniEventIntegration.AltinnSubscription\UniEventIntegration.AltinnSubscription.csproj" />
     <ProjectReference Include="..\UniEventIntegration.ServiceDefaults\UniEventIntegration.ServiceDefaults.csproj" />
   </ItemGroup>
 

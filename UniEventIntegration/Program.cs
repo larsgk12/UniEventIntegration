@@ -1,3 +1,5 @@
+using UniEventIntegration.AltinnSubscription;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.AddServiceDefaults();
@@ -7,6 +9,18 @@ builder.AddServiceDefaults();
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+// Register token provider
+builder.Services.AddSingleton<IAltinnTokenProvider, AltinnTokenProvider>();
+builder.Services.AddTransient<AltinnBearerTokenHandler>();
+
+// Register HttpClient with the handler
+builder.Services.AddHttpClient<IAltinnSubscriptionService, AltinnSubscriptionService>()
+    .AddHttpMessageHandler<AltinnBearerTokenHandler>()
+    .ConfigureHttpClient(client =>
+    {
+        client.Timeout = TimeSpan.FromSeconds(30);
+    });
 
 var app = builder.Build();
 
