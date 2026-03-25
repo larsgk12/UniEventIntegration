@@ -13,6 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\UniEventIntegration.AltinnSubscription\UniEventIntegration.AltinnSubscription.csproj" />
     <ProjectReference Include="..\UniEventIntegration.ServiceDefaults\UniEventIntegration.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\UniEventIntegration.UnimicroPlatform\UniEventIntegration.UnimicroPlatform.csproj" />
   </ItemGroup>
 
 </Project>

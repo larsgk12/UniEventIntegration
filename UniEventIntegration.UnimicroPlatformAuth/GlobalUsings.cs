@@ -1,0 +1,16 @@
+﻿global using CommunityToolkit.Diagnostics;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.Logging;
+global using Microsoft.Extensions.Options;
+global using Microsoft.IdentityModel.JsonWebTokens;
+global using Microsoft.IdentityModel.Tokens;
+global using System.Diagnostics;
+global using System.Net;
+global using System.Net.Http.Headers;
+global using System.Net.Http.Json;
+global using System.Security.Claims;
+global using System.Security.Cryptography;
+global using System.Security.Cryptography.X509Certificates;
+global using System.Text;
+global using System.Text.Json.Serialization;
+global using System.Globalization;

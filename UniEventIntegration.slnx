@@ -2,5 +2,8 @@
   <Project Path="UniEventIntegration.AltinnSubscription/UniEventIntegration.AltinnSubscription.csproj" Id="549ae168-9df9-493b-bff6-d95de5239d64" />
   <Project Path="UniEventIntegration.AppHost/UniEventIntegration.AppHost.csproj" />
   <Project Path="UniEventIntegration.ServiceDefaults/UniEventIntegration.ServiceDefaults.csproj" />
+  <Project Path="UniEventIntegration.UnimicroPlatform/UniEventIntegration.UnimicroPlatform.csproj" Id="44cd5493-c4bf-460b-bdd7-3395a5b61fc2" />
+  <Project Path="UniEventIntegration.UnimicroPlatformAuth/UniEventIntegration.UnimicroPlatformAuth.csproj" Id="370059eb-3271-4774-ba78-d779a8ca555c" />
+  <Project Path="UniEventIntegration.Utils/UniEventIntegration.Utils.csproj" Id="471ff2b9-2fe4-4270-b2f3-6b573f7573b1" />
   <Project Path="UniEventIntegration/UniEventIntegration.csproj" />
 </Solution>

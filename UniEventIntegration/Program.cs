@@ -1,4 +1,5 @@
 using UniEventIntegration.AltinnSubscription;
+using UniEventIntegration.UnimicroPlatform.Payroll;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddSingleton<IAltinnTokenProvider, AltinnTokenProvider>();
 builder.Services.AddTransient<AltinnBearerTokenHandler>();
 
+
 // Register HttpClient with the handler
 builder.Services.AddHttpClient<IAltinnSubscriptionService, AltinnSubscriptionService>()
     .AddHttpMessageHandler<AltinnBearerTokenHandler>()
@@ -21,6 +23,8 @@ builder.Services.AddHttpClient<IAltinnSubscriptionService, AltinnSubscriptionSer
     {
         client.Timeout = TimeSpan.FromSeconds(30);
     });
+
+builder.Services.AddHttpClient<IPayrollService, PayrollService>();
 
 var app = builder.Build();
 
